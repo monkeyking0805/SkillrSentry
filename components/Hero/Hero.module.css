@@ -1,0 +1,97 @@
+.container {
+  min-height: 990px;
+  width: 100%;
+  background: #0c1f3f;
+  background-image: url("/hero-bg.png");
+  text-align: center;
+  padding: 2.5rem 10px 0;
+  margin-bottom: 14.125rem;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding-top: 30px;
+    min-height: 850px;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .container {
+    min-height: 900px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .container {
+    min-height: 950px;
+  }
+}
+
+.title {
+  color: #f2f3f4;
+  max-width: 1100px;
+  padding: 0 14px;
+  margin: 2.5rem auto;
+}
+
+@media only screen and (max-width: 1120px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.description {
+  color: #f2f3f4;
+  letter-spacing: normal;
+  max-width: 520px;
+  margin: 2.5rem auto;
+  padding: 0 14px;
+  box-sizing: content-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+.screens {
+  /* height: 530px; */
+  position: relative;
+}
+
+.screens > div {
+  position: absolute;
+  left: 50%;
+  /* transform: translateX(-50%, -50%); */
+  transform: translateX(-50%);
+}
+
+.screensMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .screensDesktop {
+    display: none;
+  }
+  .screensMobile {
+    display: block;
+  }
+}
